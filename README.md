@@ -19,7 +19,7 @@ Incluye uso de Claude y Codex, historial de consumo, monitor del Mac, reproducto
 
 ## Descargar e instalar
 
-**[Descargar NekoNotch para Mac · Apple Silicon](dist/NekoNotch-arm64.zip?raw=true)**
+**[Descargar NekoNotch para Mac · Apple Silicon](https://github.com/Adrianzubieta/neko_notch/raw/main/dist/NekoNotch-arm64.zip)**
 
 Versión **0.1.1** · macOS **14.2 o posterior** · chips **M1, M2, M3, M4 y posteriores**. Esta descarga no incluye soporte para Mac Intel. No hace falta instalar Xcode ni Homebrew para abrir la app; la pestaña Brew solo funciona si Homebrew ya está instalado.
 
