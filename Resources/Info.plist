@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>NekoNotch</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleExecutable</key>
+	<string>MiMac</string>
+	<key>CFBundleIdentifier</key>
+	<string>local.mimac.monitor</string>
+	<key>CFBundleName</key>
+	<string>NekoNotch</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.2</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Mi Mac necesita controlar Spotify o Música para mostrar la canción y usar pausa y siguiente.</string>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>Mi Mac procesa el audio localmente para ajustar el volumen de cada app. No se guarda ni se envía audio.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+</dict>
+</plist>
