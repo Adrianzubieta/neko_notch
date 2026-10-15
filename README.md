@@ -33,6 +33,15 @@ Versión **0.1.1** · macOS **14.2 o posterior** · chips **M1, M2, M3, M4 y pos
 
 Esta versión tiene **firma local ad hoc**; todavía no está firmada con Developer ID ni notarizada por Apple. macOS puede bloquearla al descargarla de Internet. Si confiás en esta descarga, seguí las [instrucciones oficiales de Apple para abrir apps de desarrolladores no identificados](https://support.apple.com/102445). No es necesario desactivar Gatekeeper.
 
+Si aparece **“Apple no pudo verificar que NekoNotch no contenga software malicioso”** y descargaste la app de este repositorio:
+
+1. Tocá **Listo** para cerrar el aviso.
+2. Abrí **Ajustes del Sistema → Privacidad y seguridad**.
+3. Bajá hasta **Seguridad** y tocá **Abrir igualmente** junto a NekoNotch.
+4. Autenticá la acción si macOS lo solicita y confirmá con **Abrir**.
+
+La autorización se guarda para esa app; después podés abrirla normalmente. Estos pasos corresponden al aviso de app no verificada, no a una alerta de malware detectado o de archivo dañado.
+
 La compilación fue comprobada en el Mac de desarrollo con Apple Silicon; aún no hay pruebas en todas las versiones de macOS compatibles con el objetivo de compilación.
 
 ### Integridad de la descarga
