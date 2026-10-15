@@ -19,11 +19,11 @@ Incluye uso de Claude y Codex, historial de consumo, monitor del Mac, reproducto
 
 ## Descargar e instalar
 
-**[Descargar NekoNotch para Mac · Apple Silicon](https://github.com/Adrianzubieta/neko_notch/raw/main/dist/NekoNotch-arm64.zip)**
+**[Descargar NekoNotch para Mac · Intel y Apple Silicon](https://github.com/Adrianzubieta/neko_notch/raw/main/dist/NekoNotch-universal.zip)**
 
-Versión **0.1.1** · macOS **14.2 o posterior** · chips **M1, M2, M3, M4 y posteriores**. Esta descarga no incluye soporte para Mac Intel. No hace falta instalar Xcode ni Homebrew para abrir la app; la pestaña Brew solo funciona si Homebrew ya está instalado.
+Versión **0.1.1** · macOS **14.2 o posterior** · **Intel y Apple Silicon (M1 y posteriores)**. No hace falta instalar Xcode ni Homebrew para abrir la app; la pestaña Brew solo funciona si Homebrew ya está instalado.
 
-1. Descargá y descomprimí `NekoNotch-arm64.zip`.
+1. Descargá y descomprimí `NekoNotch-universal.zip`.
 2. Arrastrá `NekoNotch.app` a **Aplicaciones**.
 3. Abrila desde Aplicaciones. Aparece el gatito en la barra de menús y el panel junto al notch.
 4. En **Opciones → General**, elegí el tamaño y la pantalla. Cada sección permite mostrar u ocultar su pestaña.
@@ -42,7 +42,7 @@ Si aparece **“Apple no pudo verificar que NekoNotch no contenga software malic
 
 La autorización se guarda para esa app; después podés abrirla normalmente. Estos pasos corresponden al aviso de app no verificada, no a una alerta de malware detectado o de archivo dañado.
 
-La compilación fue comprobada en el Mac de desarrollo con Apple Silicon; aún no hay pruebas en todas las versiones de macOS compatibles con el objetivo de compilación.
+La app incluye binarios para Intel (x86_64) y Apple Silicon (arm64). La compilación y firma se comprueban en el Mac de desarrollo con Apple Silicon; la ejecución en hardware Intel y en todas las versiones compatibles de macOS todavía requiere pruebas.
 
 ### Integridad de la descarga
 
@@ -58,13 +58,13 @@ shasum -a 256 -c SHA256SUMS.txt
 ./package.sh
 ```
 
-Este script compila la app y genera `dist/NekoNotch-arm64.zip` y `dist/SHA256SUMS.txt`. Los archivos de `dist/` se incluyen en el repositorio para que el enlace de descarga del README funcione al subirlo a GitHub. Después de modificar el código, regenerá y subí también esos archivos.
+Este script compila la app y genera `dist/NekoNotch-universal.zip` y `dist/SHA256SUMS.txt`. Los archivos de `dist/` se incluyen en el repositorio para que el enlace de descarga del README funcione al subirlo a GitHub. Después de modificar el código, regenerá y subí también esos archivos.
 
 También podés adjuntar ambos archivos a una **GitHub Release** etiquetada `v0.1.1`. El ZIP es la app instalable; los archivos “Source code” que GitHub genera automáticamente contienen el código y no reemplazan esta descarga.
 
 ## Compilar
 
-Requiere Apple Silicon, macOS 14.2 o posterior y las Command Line Tools de Xcode.
+Requiere un Mac Intel o Apple Silicon, macOS 14.2 o posterior y las Command Line Tools de Xcode. El script genera una app universal con ambas arquitecturas, incluidos el puente de Claude y el adaptador de medios.
 
 ```sh
 ./build.sh

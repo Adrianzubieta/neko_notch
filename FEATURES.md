@@ -1,6 +1,6 @@
 # NekoNotch · implementación y límites
 
-Versión 0.1.1 para Apple Silicon y macOS 14.2 o posterior. Compilación local con Command Line Tools; firma ad hoc, sin notarización.
+Versión 0.1.1 para Intel y Apple Silicon, con macOS 14.2 o posterior. Compilación local con Command Line Tools; firma ad hoc, sin notarización.
 
 ## Panel, pantallas y configuración
 
